@@ -234,7 +234,7 @@
       height: 100%;
       color: white;
       font-size: 0.8rem;
-      justify-content: start;
+      justify-content: center;
 }
 .eye{
       grid-area: eye;
