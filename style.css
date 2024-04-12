@@ -1,389 +1,422 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-/* Main Front Cover Page */
-#mainCoverPage{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto 3rem auto auto 2rem;
-      height: 100vh;
-      background: whitesmoke;
-      padding: 1rem;
-      gap: 0.2rem;
-      grid-template-areas: "accontInfo accontInfo accontInfo accontInfo"
-      "transactioncontainer transactioncontainer transactioncontainer transactioncontainer"
-      "paybills paybills paybills paybills"
-      "adscontainer adscontainer adscontainer adscontainer"
-      "footer footer footer footer";
-}
-/* MAIN BODY */
-.acctInfo{
-      grid-area: accontInfo;
-      background: white;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto auto auto;
-      grid-template-areas: "acctIdServices"
-      "marquee"
-      "acctBalDeposit";
-}
-/* Contents Of .acctInfo */
-.acctIdServices{
-      grid-area: acctIdServices;
-      /* border: 2px solid black; */
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: auto;
-      border-radius: 0.5rem;
-      grid-template-areas: "photo name name headPhone scan bell";
-}
-/* contents of .acctIdServices */
-.photo{
-      grid-area: photo;
-      /* border: 2px solid red; */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-}
-/* content of .photo */
-.photoHolder{
-      display: flex;
-      flex-direction: column;
-      width: 3rem;
-      height: 3rem;
-      /* border: 2px solid blue; */
-      border-radius: 50%;
-      position: inherit;
-      margin: auto;
-      background-image: url(images/kingphoto.jpg);
-      background-position: 70%;
-      background-size: 145%;
-}
-.name{
-      grid-area: name;
-      /* border: 2px solid red; */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-}
-/* content of .name */
-.nameHolder{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 2rem;
-      /* border: 2px solid blue; */
-      margin: auto;
-      align-items: center;
-      cursor: pointer;
-      font-size: 0.8rem;
-      position: inherit;
-}
-.headPhone{
-      grid-area: headPhone;
-      /* border: 2px solid red; */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-}
-/* contents of .headPhone */
-.headPhoneHolder{
-      display: flex;
-      flex-direction: column;
-      width: 3rem;
-      height: 3rem;
-      /* border: 2px solid blue; */
-      position: inherit;
-      margin: auto;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 1.5rem;
-}
-.scan{
-      grid-area: scan;
-      /* border: 2px solid red; */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-}
-/* content of .scan */
-.scanHolder{
-      display: flex;
-      flex-direction: column;
-      width: 2rem;
-      height: 2rem;
-      position: inherit;
-      /* border: 2px solid blue; */
-      margin: auto;
-      background-image: url(images/scan_logo.png);
-      background-position: center;
-      background-size: 70%;
-      background-repeat: no-repeat;
-}
-.bell{
-      grid-area: bell;
-      /* border: 2px solid red; */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-}
-/* contents of .bell */
-.bellHolder{
-      display: flex;
-      flex-direction: column;
-      width: 2rem;
-      height: 2rem;
-      position: inherit;
-      /* border: 2px solid blue; */
-      margin: auto;
-      text-decoration: none;
-      font-size: 1.5rem;
-      align-items: center;
-      justify-content: center;
-}
-.redDot{
-      display: flex;
-      flex-direction: column;
-      width: 0.6rem;
-      height: 0.6rem;
-      border-radius: 50%;
-      background: red;
-      position: absolute;
-      left: 1.6rem;
-      bottom: 1.6rem;
-}
-
-.marquee{
-      grid-area: marquee;
-      /* border: 2px solid black; */
-      border-radius: 0.5rem;
-}
-.marquee a{
-      color: black;
-      font-family: 'Times New Roman', Times, serif;
-}
-
-.acctBalDeposit{
-      grid-area: acctBalDeposit;
-      border-radius: 0.5rem;
-      background: green;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto auto;
-      padding: 1rem;
-      gap: 0.5rem;
-      grid-template-areas: "availBal transHist"
-      "amount addMoney";
-}
-/* contents of .acctBalDeposit */
-.availBal{
-      grid-area: availBal;
-      /* border: 2px solid gold; */
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "shieldTick availableBalance availableBalance availableBalance availableBalance availableBalance availableBalance eye";
-}
-/* contents of .availBal */
-.shieldTick{
-      grid-area: shieldTick;
-      /* border: 2px solid red; */
-      display: flex;
-      position: relative;
-      color: white;
-      text-decoration: none;
-}
-/* content of .shieldTick */
-.shieldHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      width: 100%;
-      height: 100%;
-      justify-content: end;
-}
-/* content of .shieldHolder */
-.tick{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid black; */
-      margin: auto;
-      width: 1rem;
-      height: 1rem;
-      color: black;
-      justify-content: center;
-      align-items: center;
-      font-size: 0.7rem;
-}
-.availableBalance{
-      grid-area: availableBalance;
-      /* border: 2px solid blue; */
-      display: flex;
-      position: relative;
-}
-/* content of .availableBalance */
-.availableBalanceHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      min-width: 100%;
-      height: 100%;
-      color: white;
-      font-size: 0.87rem;
-      justify-content: center;
-}
-.eye{
-      grid-area: eye;
-      /* border: 2px solid black; */
-      display: flex;
-      position: relative;
-}
-/* content of .eye */
-.eyeHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      width: 100%;
-      height: 100%;
-      color: white;
-      justify-content: start;
-}
-
-.amount{
-      grid-area: amount;
-      /* border: 2px solid gold; */
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "naira numbers numbers numbers numbers numbers numbers numbers";
-}
-/* contents of .amount */
-.naira{
-      grid-area: naira;
-      /* border: 2px solid red; */
-      display: flex;
-      position: relative;
-}
-/* content of .naira */
-.nairaHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      width: 100%;
-      height: 100%;
-      color: white;
-      justify-content: end;
-      align-items: center;
-      text-decoration: line-through;
-      font-size: 0.7rem;
-      top: 0.2rem;
-}
-.numbers{
-      grid-area: numbers;
-      /* border: 2px solid blue; */
-      display: flex;
-      position: relative;
-}
-/* content of .numbers */
-.numberHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      min-width: 100%;
-      height: 100%;
-      color: white;
-      align-items: center;
-      font-size: 1.3rem;
-}
-
-.transHist {
-      grid-area: transHist;
-      /* border: 2px solid gold; */
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "transactionHistory";
-}
-/* content of .transHist */
-.transactionHistory{
-      grid-area: transactionHistory;
-      /* border: 2px solid red; */
-      display: flex;
-      position: relative;
-}
-/* content of transactionHistory */
-.transactionHistoryHolder{
-      display: flex;
-      position: absolute;
-      /* border: 2px solid white; */
-      width: 100%;
-      height: 100%;
-      color: white;
-      justify-content: end;
-      font-size: 0.8rem;
-}
-
-.addMoney{
-      grid-area: addMoney;
-      /* border: 2px solid gold; */
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "addCash";
-}
-/* content of .addMoney */
-.addCash{
-      grid-area: addCash;
-      /* border: 2px solid red; */
-      display: flex;
-      position: relative;
-}
-/* content of addCash */
-.addCashHolder{
-      display: flex;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      /* border: 2px solid white; */
-      justify-content: end;
-      align-items: center;
-}
-.addCashHolder p{
-      color: green;
-      font-size: 0.8rem;
-      background: white;
-      padding: 0.2rem;
-      border-radius: 1.3rem;
-}
-
-
-
-.transactionContainer{
-      grid-area: transactioncontainer;
-      background: white;
-}
-
-
-
-.payBills{
-      grid-area: paybills;
-      background: white;
-}
-
-
-
-.adsContainer{
-      grid-area: adscontainer;
-      background: white;
-}
-
-
-
-.footer{
-      grid-area: footer;
-      background: white;
+@media (max-width:425px){
+      * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+      
+            /* Main Front Cover Page */
+            #mainCoverPage {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  grid-template-rows: auto 3rem auto auto 2rem;
+                  height: 100vh;
+                  background: whitesmoke;
+                  padding: 1rem;
+                  gap: 0.2rem;
+                  grid-template-areas: "accontInfo accontInfo accontInfo accontInfo"
+                        "transactioncontainer transactioncontainer transactioncontainer transactioncontainer"
+                        "paybills paybills paybills paybills"
+                        "adscontainer adscontainer adscontainer adscontainer"
+                        "footer footer footer footer";
+            }
+      
+            /* MAIN BODY */
+            .acctInfo {
+                  grid-area: accontInfo;
+                  background: white;
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  grid-template-rows: auto auto auto;
+                  grid-template-areas: "acctIdServices"
+                        "marquee"
+                        "acctBalDeposit";
+            }
+      
+            /* Contents Of .acctInfo */
+            .acctIdServices {
+                  grid-area: acctIdServices;
+                  /* border: 2px solid black; */
+                  display: grid;
+                  grid-template-columns: repeat(6, 1fr);
+                  grid-template-rows: auto;
+                  border-radius: 0.5rem;
+                  grid-template-areas: "photo name name headPhone scan bell";
+            }
+      
+            /* contents of .acctIdServices */
+            .photo {
+                  grid-area: photo;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+            }
+      
+            /* content of .photo */
+            .photoHolder {
+                  display: flex;
+                  flex-direction: column;
+                  width: 3rem;
+                  height: 3rem;
+                  /* border: 2px solid blue; */
+                  border-radius: 50%;
+                  position: inherit;
+                  margin: auto;
+                  background-image: url(images/kingphoto.jpg);
+                  background-position: 70%;
+                  background-size: 145%;
+            }
+      
+            .name {
+                  grid-area: name;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+            }
+      
+            /* content of .name */
+            .nameHolder {
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  height: 2rem;
+                  /* border: 2px solid blue; */
+                  margin: auto;
+                  align-items: center;
+                  cursor: pointer;
+                  font-size: 0.8rem;
+                  position: inherit;
+            }
+      
+            .headPhone {
+                  grid-area: headPhone;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+            }
+      
+            /* contents of .headPhone */
+            .headPhoneHolder {
+                  display: flex;
+                  flex-direction: column;
+                  width: 3rem;
+                  height: 3rem;
+                  /* border: 2px solid blue; */
+                  position: inherit;
+                  margin: auto;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                  font-size: 1.5rem;
+            }
+      
+            .scan {
+                  grid-area: scan;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+            }
+      
+            /* content of .scan */
+            .scanHolder {
+                  display: flex;
+                  flex-direction: column;
+                  width: 2rem;
+                  height: 2rem;
+                  position: inherit;
+                  /* border: 2px solid blue; */
+                  margin: auto;
+                  background-image: url(images/scan_logo.png);
+                  background-position: center;
+                  background-size: 70%;
+                  background-repeat: no-repeat;
+            }
+      
+            .bell {
+                  grid-area: bell;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+            }
+      
+            /* contents of .bell */
+            .bellHolder {
+                  display: flex;
+                  flex-direction: column;
+                  width: 2rem;
+                  height: 2rem;
+                  position: inherit;
+                  /* border: 2px solid blue; */
+                  margin: auto;
+                  text-decoration: none;
+                  font-size: 1.5rem;
+                  align-items: center;
+                  justify-content: center;
+            }
+      
+            .redDot {
+                  display: flex;
+                  flex-direction: column;
+                  width: 0.6rem;
+                  height: 0.6rem;
+                  border-radius: 50%;
+                  background: red;
+                  position: absolute;
+                  left: 1.6rem;
+                  bottom: 1.6rem;
+            }
+      
+            .marquee {
+                  grid-area: marquee;
+                  /* border: 2px solid black; */
+                  border-radius: 0.5rem;
+            }
+      
+            .marquee a {
+                  color: black;
+                  font-family: 'Times New Roman', Times, serif;
+            }
+      
+            .acctBalDeposit {
+                  grid-area: acctBalDeposit;
+                  border-radius: 0.5rem;
+                  background: green;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  grid-template-rows: auto auto;
+                  padding: 1rem;
+                  gap: 0.5rem;
+                  grid-template-areas: "availBal transHist"
+                        "amount addMoney";
+            }
+      
+            /* contents of .acctBalDeposit */
+            .availBal {
+                  grid-area: availBal;
+                  /* border: 2px solid gold; */
+                  display: grid;
+                  grid-template-columns: repeat(8, 1fr);
+                  grid-template-rows: auto;
+                  grid-template-areas: "shieldTick availableBalance availableBalance availableBalance availableBalance availableBalance availableBalance eye";
+            }
+      
+            /* contents of .availBal */
+            .shieldTick {
+                  grid-area: shieldTick;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  position: relative;
+                  color: white;
+                  text-decoration: none;
+            }
+      
+            /* content of .shieldTick */
+            .shieldHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  width: 100%;
+                  height: 100%;
+                  justify-content: end;
+            }
+      
+            /* content of .shieldHolder */
+            .tick {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid black; */
+                  margin: auto;
+                  width: 1rem;
+                  height: 1rem;
+                  color: black;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 0.7rem;
+            }
+      
+            .availableBalance {
+                  grid-area: availableBalance;
+                  /* border: 2px solid blue; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of .availableBalance */
+            .availableBalanceHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  min-width: 100%;
+                  height: 100%;
+                  color: white;
+                  font-size: 0.87rem;
+                  justify-content: center;
+            }
+      
+            .eye {
+                  grid-area: eye;
+                  /* border: 2px solid black; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of .eye */
+            .eyeHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  width: 100%;
+                  height: 100%;
+                  color: white;
+                  justify-content: start;
+            }
+      
+            .amount {
+                  grid-area: amount;
+                  /* border: 2px solid gold; */
+                  display: grid;
+                  grid-template-columns: repeat(8, 1fr);
+                  grid-template-rows: auto;
+                  grid-template-areas: "naira numbers numbers numbers numbers numbers numbers numbers";
+            }
+      
+            /* contents of .amount */
+            .naira {
+                  grid-area: naira;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of .naira */
+            .nairaHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  width: 100%;
+                  height: 100%;
+                  color: white;
+                  justify-content: end;
+                  align-items: center;
+                  text-decoration: line-through;
+                  font-size: 0.8rem;
+                  top: 0.2rem;
+            }
+      
+            .numbers {
+                  grid-area: numbers;
+                  /* border: 2px solid blue; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of .numbers */
+            .numberHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  min-width: 100%;
+                  height: 100%;
+                  color: white;
+                  align-items: center;
+                  font-size: 1.3rem;
+            }
+      
+            .transHist {
+                  grid-area: transHist;
+                  /* border: 2px solid gold; */
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  grid-template-rows: auto;
+                  grid-template-areas: "transactionHistory";
+            }
+      
+            /* content of .transHist */
+            .transactionHistory {
+                  grid-area: transactionHistory;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of transactionHistory */
+            .transactionHistoryHolder {
+                  display: flex;
+                  position: absolute;
+                  /* border: 2px solid white; */
+                  width: 100%;
+                  height: 100%;
+                  color: white;
+                  justify-content: end;
+                  font-size: 0.8rem;
+            }
+      
+            .addMoney {
+                  grid-area: addMoney;
+                  /* border: 2px solid gold; */
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  grid-template-rows: auto;
+                  grid-template-areas: "addCash";
+            }
+      
+            /* content of .addMoney */
+            .addCash {
+                  grid-area: addCash;
+                  /* border: 2px solid red; */
+                  display: flex;
+                  position: relative;
+            }
+      
+            /* content of addCash */
+            .addCashHolder {
+                  display: flex;
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  /* border: 2px solid white; */
+                  justify-content: end;
+                  align-items: center;
+            }
+      
+            .addCashHolder p {
+                  color: green;
+                  font-size: 0.8rem;
+                  background: white;
+                  padding: 0.4rem;
+                  border-radius: 1.3rem;
+            }
+      
+      
+      
+            .transactionContainer {
+                  grid-area: transactioncontainer;
+                  background: white;
+            }
+      
+      
+      
+            .payBills {
+                  grid-area: paybills;
+                  background: white;
+            }
+      
+      
+      
+            .adsContainer {
+                  grid-area: adscontainer;
+                  background: white;
+            }
+      
+      
+      
+            .footer {
+                  grid-area: footer;
+                  background: white;
+            }
 }
