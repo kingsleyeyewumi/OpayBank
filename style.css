@@ -228,6 +228,7 @@
 /* content of .availableBalance */
 .availableBalanceHolder{
       display: flex;
+      flex-direction: row;
       position: absolute;
       /* border: 2px solid white; */
       min-width: 100%;
