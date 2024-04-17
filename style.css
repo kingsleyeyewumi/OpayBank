@@ -23,6 +23,7 @@
 .acctInfo{
       grid-area: accontInfo;
       background: white;
+      border-radius: 0.7rem;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto 1.5rem auto;
@@ -368,6 +369,7 @@
 .transactionContainer{
       grid-area: transactioncontainer;
       background: white;
+      border-radius: 0.7rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
@@ -564,6 +566,290 @@
 .payBills{
       grid-area: paybills;
       background: white;
+      border-radius: 0.7rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "airTime data betting tv"
+      "oWealth loan play4AChild more";
+      padding: 0.7rem;
+      gap: 0.5rem;
+}
+/* contents of .payBills */
+.airTime{
+      grid-area: airTime;
+      /* border: 2px solid black; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "airTimeLogo"
+      "airTimeWord";
+      gap: 0.3rem;
+}
+/* contents of .airtime */
+.airTimeLogo{
+      grid-area: airTimeLogo;
+      /* border: 2px solid red; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .airTimeLogo */
+.airTimeLogoHolder{
+      display: flex;
+      position: absolute;
+      min-width: 2.3rem;
+      min-height: 2rem;
+      border: 7px solid whitesmoke;
+      border-radius: 50%;
+      padding: 0.2rem;
+      justify-content: center;
+      align-items: center;
+}
+.signalBars{
+      display: flex;
+      position: absolute;
+      min-width: 1.5rem;
+      min-height: 1.5rem;
+      /* border: 2px solid gold; */
+      justify-content: center;
+      align-items: center;
+}
+.airTimeLogoHolder .signalBars .fa-solid{
+      color: white;
+      font-size: 0.8rem;
+}
+.airTimeLogoHolder .fa-solid{
+      color: green;
+      font-size: 1.7rem;
+}
+
+.airTimeWord{
+      grid-area: airTimeWord;
+      /* border: 2px solid blue; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .airTimeWord */
+.airTimeWordHolder{
+      display: flex;
+      position: absolute;
+      min-width: 2rem;
+      min-height: 1rem;
+      border: 5px solid whitesmoke;
+      border-radius: 0.8rem;
+      padding: 0.1rem;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
+}
+
+.data{
+      grid-area: data;
+      /* border: 2px solid black; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "dataLogo"
+      "dataWord";
+      gap: 0.3rem;
+}
+/* contents of .data */
+.dataLogo{
+      grid-area: dataLogo;
+      /* border: 2px solid gold; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* contents of .dataLogo */
+.dataLogoHolder{
+      display: flex;
+      position: absolute;
+      min-width: 2.3rem;
+      min-height: 2rem;
+      border: 5px solid whitesmoke;
+      border-radius: 50%;
+      padding: 0.2rem;
+      justify-content: center;
+      align-items: center;
+}
+.dataLogoHolder .fa-solid{
+      color: green;
+      font-size: 1.7rem;
+}
+.dataSignal{
+      display: flex;
+      position: absolute;
+      min-height: 1rem;
+      min-width: 1rem;
+      /* border: 2px solid gold; */
+      justify-content: center;
+
+}
+.dataLogoHolder .dataSignal .fa-solid{
+      color: white;
+      font-size: 0.8rem;
+}
+
+.dataWord{
+      grid-area: dataWord;
+      /* border: 2px solid red; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .dataWord */
+.dataWordHolder{
+      display: flex;
+      position: absolute;
+      min-width: 2rem;
+      min-height: 1rem;
+      border: 5px solid whitesmoke;
+      border-radius: 0.8rem;
+      padding: 0.1rem;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
+}
+
+.betting{
+      grid-area: betting;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "bettingLogo"
+      "bettingWord";
+      gap: 0.3rem;
+}
+/* contents of .betting */
+.bettingLogo{
+      grid-area: bettingLogo;
+      border: 2px solid green;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .bettingLogo */
+.bettingLogoHolder{
+      display: flex;
+      position: absolute;
+}
+
+.bettingWord{
+      grid-area: bettingWord;
+      border: 2px solid blue;
+}
+
+.tv{
+      grid-area: tv;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "tvLogo"
+      "tvWord";
+      gap: 0.3rem;
+}
+/* contents of .tv */
+.tvLogo{
+      grid-area: tvLogo;
+      border: 2px solid gray;
+}
+.tvWord{
+      grid-area: tvWord;
+      border: 2px solid brown;
+}
+
+.oWealth{
+      grid-area: oWealth;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "oWealthLogo"
+      "oWealthWord";
+      gap: 0.3rem;
+}
+/* contents of .oWealth */
+.oWealthLogo{
+      grid-area: oWealthLogo;
+      border: 2px solid red;
+}
+.oWealthWord{
+      grid-area: oWealthWord;
+      border: 2px solid blue;
+}
+
+.loan{
+      grid-area: loan;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "loanLogo"
+      "loanWord";
+      gap: 0.3rem;
+}
+/* contents of .loan */
+.loanLogo{
+      grid-area: loanLogo;
+      border: 2px solid gold;
+}
+.loanWord{
+      grid-area: loanWord;
+      border: 2px solid brown;
+}
+
+.play4AChild{
+      grid-area: play4AChild;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "play4AChildLogo"
+      "play4AChildWord";
+      gap: 0.3rem;
+}
+/* contents of .play4AChild */
+.play4AChildLogo{
+      grid-area: play4AChildLogo;
+      border: 2px solid gray;
+}
+.play4AChildWord{
+      grid-area: play4AChildWord;
+      border: 2px solid blue;
+}
+
+.more{
+      grid-area: more;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "moreLogo"
+      "moreWord";
+      gap: 0.3rem;
+}
+/* contents of .more */
+.moreLogo{
+      grid-area: moreLogo;
+      border: 2px solid blue;
+}
+.moreWord{
+      grid-area: moreWord;
+      border: 2px solid red;
 }
 
 
@@ -571,6 +857,7 @@
 .adsContainer{
       grid-area: adscontainer;
       background: white;
+      border-radius: 0.7rem;
 }
 
 
@@ -578,4 +865,5 @@
 .footer{
       grid-area: footer;
       background: white;
+      border-radius: 0.7rem;
 }
