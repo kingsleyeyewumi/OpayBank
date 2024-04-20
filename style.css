@@ -1118,7 +1118,7 @@
       position: absolute;
       min-width: 2rem;
       min-height: 1rem;
-      /* border: 5px solid whitesmoke; */
+      border: 5px solid whitesmoke;
       border-radius: 0.8rem;
       padding: 0.1rem;
       text-decoration: none;
