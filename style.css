@@ -1101,7 +1101,7 @@
 }
 /* content of .moreTvIcon */
 .moreTvIcon .tvPlayLogo .fa-brands{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
 }
 .moreTvIcon .tvPlayLogo{
       display: flex;
@@ -1126,7 +1126,7 @@
       position: absolute;
       min-width: 2rem;
       min-height: 1rem;
-      /* border: 5px solid whitesmoke; */
+      border: 5px solid whitesmoke;
       border-radius: 0.8rem;
       padding: 0.1rem;
       text-decoration: none;
