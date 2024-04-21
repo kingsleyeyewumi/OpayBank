@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto 2rem;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -55,8 +55,8 @@
 .photoHolder{
       display: flex;
       flex-direction: column;
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
       /* border: 2px solid blue; */
       border-radius: 50%;
       position: inherit;
@@ -578,7 +578,7 @@
       grid-template-areas: "airTime data betting tv"
       "oWealth loan play4AChild more";
       padding: 0.7rem;
-      gap: 0.5rem;
+      gap: 1rem;
       margin-left: 1rem;
       margin-right: 1rem;
 }
@@ -1224,7 +1224,7 @@
 }
 .promoWordHolder p{
       color: black;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
 }
 
 .promoOpenSpace{
@@ -1246,7 +1246,7 @@
       position: relative;
       left: 2rem;
       width: 70%;
-      min-height: 4rem;
+      min-height: 2.5rem;
       /* border: 2px solid red; */
       text-decoration: none;
       align-items: flex-end;
