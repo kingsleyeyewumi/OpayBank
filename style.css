@@ -583,10 +583,12 @@
       grid-template-rows: auto auto;
       grid-template-areas: "airTime data betting tv"
       "oWealth loan play4AChild more";
-      padding: 1.5rem;
-      gap: 1rem;
+      padding: 1rem;
+      padding-top: 1.5rem;
+      gap: 2.5rem;
       margin-left: 1rem;
       margin-right: 1rem;
+      /* border: 2px solid black; */
 }
 /* contents of .payBills */
 .airTime{
