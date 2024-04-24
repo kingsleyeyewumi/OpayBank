@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto auto 2rem;
+      grid-template-rows: auto auto auto 11rem auto;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -1193,7 +1193,7 @@
       padding: 0.3rem;
 }
 .promoLogoHolder p{
-      font-size: 0.5rem;
+      font-size: 0.4rem;
       font-style: italic;
       color: lightgreen;
 }
@@ -1243,8 +1243,9 @@
 .promoSecurityLogoHolder{
       display: flex;
       flex-direction: column;
-      position: relative;
-      left: 2rem;
+      position: absolute;
+      right: -2rem;
+      top: 0.5rem;
       width: 70%;
       min-height: 2.5rem;
       /* border: 2px solid red; */
@@ -1256,7 +1257,7 @@
       display: flex;
       position: relative;
       justify-content: flex-end;
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: green;
 }
 .promoSecurityLogoHolder .shield .tick{
@@ -1279,7 +1280,7 @@
       color: white;
       background: green;
       border-radius: 1rem;
-      padding: 0.4rem;
+      padding: 0.3rem;
 }
 
 
@@ -1287,4 +1288,153 @@
 .footer{
       grid-area: footer;
       background: white;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "home reward finance cards me";
+      /* padding: 0.5rem; */
+}
+/* contents of .footer */
+.home{
+      grid-area: home;
+      /* border: 2px solid black; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .home */
+.homeLogoHolder{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      min-height: 100%;
+      min-width: 2rem;
+      /* border: 2px solid red; */
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: green;
+}
+.homeLogoHolder .fa-brands{
+      font-size: 1.3rem;
+}
+.homeLogoHolder p{
+      font-size: 0.8rem;
+}
+
+.reward{
+      grid-area: reward;
+      /* border: 2px solid black; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .reward */
+.rewardLogoHolder{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      min-height: 100%;
+      min-width: 2rem;
+      /* border: 2px solid red; */
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: lightgray;
+}
+.rewardLogoHolder .fa-brands{
+      font-size: 1.3rem;
+}
+.rewardLogoHolder p{
+      font-size: 0.8rem;
+      color: gray;
+}
+
+.finance{
+      grid-area: finance;
+      /* border: 2px solid black; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .finance */
+.financeLogoHolder{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      min-height: 100%;
+      min-width: 2rem;
+      /* border: 2px solid red; */
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: lightgray;
+}
+.financeLogoHolder .fa-solid{
+      font-size: 1.3rem;
+}
+.financeLogoHolder p{
+      font-size: 0.8rem;
+      color: gray;
+}
+
+.cards{
+      grid-area: cards;
+      /* border: 2px solid black; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .cards */
+.cardsLogoHolder{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      min-height: 100%;
+      min-width: 2rem;
+      /* border: 2px solid red; */
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: lightgray;
+}
+.cardsLogoHolder .fa-regular{
+      font-size: 1.3rem;
+}
+.cardsLogoHolder p{
+      font-size: 0.8rem;
+      color: gray;
+}
+
+.me{
+      grid-area: me;
+      /* border: 2px solid black; */
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+}
+/* content of .me */
+.meLogoHolder{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      min-height: 100%;
+      min-width: 2rem;
+      /* border: 2px solid red; */
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: lightgray;
+}
+.meLogoHolder .fa-regular{
+      font-size: 1.3rem;
+}
+.meLogoHolder p{
+      font-size: 0.8rem;
+      color: gray;
 }
