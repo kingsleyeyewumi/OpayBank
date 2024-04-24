@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto 11rem auto;
+      grid-template-rows: auto auto auto 11rem 2rem;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -413,6 +413,8 @@
       align-items: center;
       text-decoration: none;
       padding: 0.3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 }
 .userLogo{
       display: flex;
@@ -424,7 +426,7 @@
 }
 .toPayLogo .fa-solid{
       color: green;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
 }
 .userLogo .fa-solid{
       color: white;
@@ -482,9 +484,11 @@
       padding: 0.3rem;
       justify-content: center;
       align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 }
 .toBankLogoHolder .fa-solid{
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: green;
 }
 
@@ -540,10 +544,12 @@
       border-radius: 0.8rem;
       padding: 0.3rem;
       text-decoration: none;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
 }
 .withdrawLogoHolder .fa-solid{
       color: green;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
 }
 
 .withdrawWord{
@@ -577,7 +583,7 @@
       grid-template-rows: auto auto;
       grid-template-areas: "airTime data betting tv"
       "oWealth loan play4AChild more";
-      padding: 0.7rem;
+      padding: 1.5rem;
       gap: 1rem;
       margin-left: 1rem;
       margin-right: 1rem;
@@ -613,6 +619,7 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
+      margin-bottom: 1rem;
 }
 .signalBars{
       display: flex;
@@ -625,11 +632,11 @@
 }
 .airTimeLogoHolder .signalBars .fa-solid{
       color: white;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
 }
 .airTimeLogoHolder .fa-solid{
       color: green;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
 }
 
 .airTimeWord{
@@ -686,10 +693,11 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
+      margin-bottom: 1rem;
 }
 .dataLogoHolder .fa-solid{
       color: green;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
 }
 .dataSignal{
       display: flex;
@@ -702,7 +710,7 @@
 }
 .dataLogoHolder .dataSignal .fa-solid{
       color: white;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
 }
 
 .dataWord{
@@ -760,8 +768,9 @@
       justify-content: center;
       align-items: center;
       color: green;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 
 .bettingWord{
@@ -821,8 +830,9 @@
       justify-content: center;
       /* align-items: center; */
       color: green;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 .tvPlayLogo{
       display: flex;
@@ -831,7 +841,7 @@
       align-items: center;
 }
 .tvLogoHolder .tvPlayLogo .fa-brands{
-      font-size: 1.4rem;
+      font-size: 1.1rem;
 }
 
 .tvWord{
@@ -889,8 +899,9 @@
       justify-content: center;
       align-items: center;
       color: green;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 
 .oWealthWord{
@@ -948,8 +959,9 @@
       justify-content: center;
       align-items: center;
       color: green;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 
 .loanWord{
@@ -1007,8 +1019,9 @@
       justify-content: center;
       align-items: center;
       color: green;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 
 .play4AChildWord{
@@ -1064,6 +1077,7 @@
       border-radius: 50%;
       padding: 0.2rem;
       text-decoration: none;
+      margin-bottom: 1rem;
 }
 /* contents of .moreLogoHolder */
 .moreCapIcon{
@@ -1077,7 +1091,7 @@
       align-items: center;
       justify-content: center;
       color: green;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
 }
 .moreBulbIcon{
       display: flex;
@@ -1090,7 +1104,7 @@
       align-items: center;
       justify-content: center;
       color: green;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
 }
 .moreTvIcon{
       display: flex;
@@ -1103,11 +1117,11 @@
       align-items: center;
       justify-content: center;
       color: green;
-      font-size: 0.7rem;
+      font-size: 0.5rem;
 }
 /* content of .moreTvIcon */
 .moreTvIcon .tvPlayLogo .fa-brands{
-      font-size: 0.7rem;
+      font-size: 0.5rem;
 }
 .moreTvIcon .tvPlayLogo{
       display: flex;
@@ -1315,6 +1329,7 @@
       justify-content: center;
       text-decoration: none;
       color: green;
+      margin-top: 1.5rem;
 }
 .homeLogoHolder .fa-brands{
       font-size: 1.3rem;
@@ -1343,6 +1358,7 @@
       justify-content: center;
       text-decoration: none;
       color: lightgray;
+      margin-top: 1.5rem;
 }
 .rewardLogoHolder .fa-brands{
       font-size: 1.3rem;
@@ -1372,6 +1388,7 @@
       justify-content: center;
       text-decoration: none;
       color: lightgray;
+      margin-top: 1.5rem;
 }
 .financeLogoHolder .fa-solid{
       font-size: 1.3rem;
@@ -1401,6 +1418,7 @@
       justify-content: center;
       text-decoration: none;
       color: lightgray;
+      margin-top: 1.5rem;
 }
 .cardsLogoHolder .fa-regular{
       font-size: 1.3rem;
@@ -1430,6 +1448,7 @@
       justify-content: center;
       text-decoration: none;
       color: lightgray;
+      margin-top: 1.5rem;
 }
 .meLogoHolder .fa-regular{
       font-size: 1.3rem;
