@@ -781,7 +781,7 @@
       animation-timing-function: ease-in;
 }
 @keyframes logochange{
-      50%{
+      100%{
             background-image: url(images/epl_logo.png);
             background-size: contain;
             transform: translateY(5px);
