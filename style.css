@@ -1315,6 +1315,8 @@
       background: rgb(55, 190, 145);
       border-radius: 1rem;
       padding: 0.1rem;
+      display: flex;
+      flex-direction: row;
 }
 
 
