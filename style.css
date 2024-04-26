@@ -777,7 +777,8 @@
       text-decoration: none;
       margin-bottom: 1rem;
       background-image: url(images/football_2.png);
-      background-size: 120%;
+      background-size: 100%;
+      background-position: center;
       animation: logochange;
       animation-duration: 3s;
       animation-iteration-count: infinite;
@@ -786,8 +787,9 @@
 @keyframes logochange{
       100%{
             background-image: url(images/epl_logo.png);
-            background-size: 120%;
+            background-size: 100%;
             transform: translateY(5px);
+            background-position: center;
       }
 }
 
