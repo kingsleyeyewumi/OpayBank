@@ -177,7 +177,7 @@
 .acctBalDeposit{
       grid-area: acctBalDeposit;
       border-radius: 0.7rem;
-      background: rgb(15, 235, 175);
+      background: rgb(55, 190, 145);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto auto;
@@ -362,7 +362,7 @@
       align-items: center;
 }
 .addCashHolder p{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 0.8rem;
       background: white;
       padding: 0.4rem;
@@ -428,7 +428,7 @@
       justify-content: center;
 }
 .toPayLogo .fa-solid{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
 }
 .userLogo .fa-solid{
@@ -492,7 +492,7 @@
 }
 .toBankLogoHolder .fa-solid{
       font-size: 1.2rem;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 
 .toBankWord{
@@ -551,7 +551,7 @@
       margin-bottom: 1rem;
 }
 .withdrawLogoHolder .fa-solid{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
 }
 
@@ -640,7 +640,7 @@
       font-size: 0.6rem;
 }
 .airTimeLogoHolder .fa-solid{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.3rem;
 }
 
@@ -701,7 +701,7 @@
       margin-bottom: 1rem;
 }
 .dataLogoHolder .fa-solid{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.3rem;
 }
 .dataSignal{
@@ -772,10 +772,12 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.3rem;
       text-decoration: none;
       margin-bottom: 1rem;
+      background-image: url(images/football_2.png);
+      background-size: 100%;
       animation: logochange;
       animation-duration: 3s;
       animation-iteration-count: infinite;
@@ -784,7 +786,7 @@
 @keyframes logochange{
       100%{
             background-image: url(images/epl_logo.png);
-            background-size: contain;
+            background-size: 100%;
             transform: translateY(5px);
       }
 }
@@ -845,7 +847,7 @@
       padding: 0.2rem;
       justify-content: center;
       /* align-items: center; */
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
       text-decoration: none;
       margin-bottom: 1rem;
@@ -914,7 +916,7 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
       text-decoration: none;
       margin-bottom: 1rem;
@@ -974,7 +976,7 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
       text-decoration: none;
       margin-bottom: 1rem;
@@ -1034,7 +1036,7 @@
       padding: 0.2rem;
       justify-content: center;
       align-items: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 1.2rem;
       text-decoration: none;
       margin-bottom: 1rem;
@@ -1106,7 +1108,7 @@
       top: 0.1rem;
       align-items: center;
       justify-content: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 0.7rem;
 }
 .moreBulbIcon{
@@ -1287,7 +1289,7 @@
       position: relative;
       justify-content: flex-end;
       font-size: 2.3rem;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       text-decoration: none;
 }
 .promoSecurityLogoHolder .shield .tick{
@@ -1302,15 +1304,15 @@
       font-size: 1.3rem;
 }
 .shieldBase{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 2.5rem;
 }
 .promoSecurityLogoHolder p{
       font-size: 0.6rem;
       color: white;
-      background: rgb(15, 235, 175);
+      background: rgb(55, 190, 145);
       border-radius: 1rem;
-      padding: 0.2rem;
+      padding: 0.1rem;
 }
 
 
@@ -1323,6 +1325,9 @@
       grid-template-rows: auto;
       grid-template-areas: "home reward finance cards me";
       /* padding: 0.5rem; */
+      /* border: 2px solid black; */
+      position: sticky;
+      bottom: 1px;
 }
 /* contents of .footer */
 .home{
@@ -1352,11 +1357,11 @@
 }
 .homeLogoHolder .fa-brands{
       font-size: 1.3rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
 }
 .homeLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
 }
 
 .reward{
@@ -1382,15 +1387,15 @@
       margin-top: 1.5rem;
 }
 .rewardLogoHolder:active{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 .rewardLogoHolder .fa-brands{
       font-size: 1.3rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
 }
 .rewardLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
 }
 
 .finance{
@@ -1416,15 +1421,15 @@
       margin-top: 1.5rem;
 }
 .financeLogoHolder:active{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 .financeLogoHolder .fa-solid{
       font-size: 1.3rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
 }
 .financeLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
 }
 
 .cards{
@@ -1450,15 +1455,15 @@
       margin-top: 1.5rem;
 }
 .cardsLogoHolder:active{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 .cardsLogoHolder .fa-regular{
       font-size: 1.3rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
 }
 .cardsLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
 }
 
 .me{
@@ -1484,13 +1489,13 @@
       margin-top: 1.5rem;
 }
 .meLogoHolder:active{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 .meLogoHolder .fa-regular{
       font-size: 1.3rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
 }
 .meLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
 }
