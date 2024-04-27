@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto 11rem 2.7rem;
+      grid-template-rows: auto auto auto 11rem 2.5rem;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -1337,7 +1337,7 @@
       grid-template-areas: "home reward finance cards me";
       /* border: 2px solid black; */
       position: sticky;
-      bottom: 3px;
+      bottom: 1px;
       /* padding-top: 0.5rem; */
       /* padding-bottom: 0.5rem; */
 }
