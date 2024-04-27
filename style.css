@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto 11rem 2.5rem;
+      grid-template-rows: auto auto auto 11rem 2.7rem;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -1123,7 +1123,7 @@
       right: 1rem;
       align-items: center;
       justify-content: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 0.7rem;
 }
 .moreTvIcon{
@@ -1136,7 +1136,7 @@
       left: 0.9rem;
       align-items: center;
       justify-content: center;
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
       font-size: 0.5rem;
 }
 /* content of .moreTvIcon */
@@ -1321,6 +1321,8 @@
       width: 5.5rem;
       justify-content: center;
       align-items: center;
+}
+.clickForSecurityParent{
       text-decoration: none;
 }
 
@@ -1336,7 +1338,9 @@
       /* padding: 0.5rem; */
       /* border: 2px solid black; */
       position: sticky;
-      bottom: 10px;
+      bottom: 1px;
+      /* padding-top: 0.5rem; */
+      /* padding-bottom: 0.5rem; */
 }
 /* contents of .footer */
 .home{
@@ -1359,7 +1363,7 @@
       justify-content: center;
       text-decoration: none;
       color: darkgray;
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
 }
 .home .fa-brands{
       font-size: 1.3rem;
@@ -1392,7 +1396,7 @@
       justify-content: center;
       text-decoration: none;
       color: darkgray;;
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
 }
 .reward a:active{
       color: rgb(55, 190, 145);
@@ -1424,7 +1428,7 @@
       justify-content: center;
       text-decoration: none;
       color: darkgray;;
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
 }
 .finance a:active{
       color: rgb(55, 190, 145);
@@ -1456,7 +1460,7 @@
       justify-content: center;
       text-decoration: none;
       color: darkgray;;
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
 }
 .cards a:active{
       color: rgb(55, 190, 145);
@@ -1488,7 +1492,7 @@
       justify-content: center;
       text-decoration: none;
       color: darkgray;;
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
 }
 .me a:active{
       color: rgb(55, 190, 145);
