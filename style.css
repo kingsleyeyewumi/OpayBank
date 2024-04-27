@@ -8,7 +8,7 @@
 #mainCoverPage{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto auto 11rem 2rem;
+      grid-template-rows: auto auto auto 11rem 2.5rem;
       height: 100vh;
       background: whitesmoke;
       /* padding: 1rem; */
@@ -1309,14 +1309,18 @@
       color: rgb(55, 190, 145);
       font-size: 2.5rem;
 }
-.promoSecurityLogoHolder p{
+.promoSecurityLogoHolder .clickForSecurity{
       font-size: 0.6rem;
       color: white;
       background: rgb(55, 190, 145);
       border-radius: 1rem;
-      padding: 0.1rem;
+      /* border: 2px solid black; */
       display: flex;
       flex-direction: row;
+      min-height: 1.3rem;
+      width: 5.5rem;
+      justify-content: center;
+      align-items: center;
 }
 
 
@@ -1331,7 +1335,7 @@
       /* padding: 0.5rem; */
       /* border: 2px solid black; */
       position: sticky;
-      bottom: 1px;
+      bottom: 10px;
 }
 /* contents of .footer */
 .home{
@@ -1346,26 +1350,24 @@
 .homeLogoHolder{
       display: flex;
       flex-direction: column;
-      position: absolute;
+      position: relative;
       min-height: 100%;
       min-width: 2rem;
       /* border: 2px solid red; */
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: lightgray;
-      margin-top: 1.5rem;
+      color: darkgray;
+      margin-top: 0.5rem;
 }
 .homeLogoHolder:active{
-      color: rgb(15, 235, 175);
+      color: rgb(55, 190, 145);
 }
 .homeLogoHolder .fa-brands{
       font-size: 1.3rem;
-      margin-bottom: 0.3rem;
 }
 .homeLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.1rem;
 }
 
 .reward{
@@ -1380,26 +1382,24 @@
 .rewardLogoHolder{
       display: flex;
       flex-direction: column;
-      position: absolute;
+      position: relative;
       min-height: 100%;
       min-width: 2rem;
       /* border: 2px solid red; */
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: lightgray;
-      margin-top: 1.5rem;
+      color: darkgray;;
+      margin-top: 0.5rem;
 }
 .rewardLogoHolder:active{
       color: rgb(55, 190, 145);
 }
 .rewardLogoHolder .fa-brands{
       font-size: 1.3rem;
-      margin-bottom: 0.3rem;
 }
 .rewardLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.1rem;
 }
 
 .finance{
@@ -1421,19 +1421,17 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: lightgray;
-      margin-top: 1.5rem;
+      color: darkgray;;
+      margin-top: 0.5rem;
 }
 .financeLogoHolder:active{
       color: rgb(55, 190, 145);
 }
 .financeLogoHolder .fa-solid{
       font-size: 1.3rem;
-      margin-bottom: 0.3rem;
 }
 .financeLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.1rem;
 }
 
 .cards{
@@ -1455,19 +1453,17 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: lightgray;
-      margin-top: 1.5rem;
+      color: darkgray;;
+      margin-top: 0.5rem;
 }
 .cardsLogoHolder:active{
       color: rgb(55, 190, 145);
 }
 .cardsLogoHolder .fa-regular{
       font-size: 1.3rem;
-      margin-bottom: 0.3rem;
 }
 .cardsLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.1rem;
 }
 
 .me{
@@ -1489,17 +1485,15 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: lightgray;
-      margin-top: 1.5rem;
+      color: darkgray;;
+      margin-top: 0.5rem;
 }
 .meLogoHolder:active{
       color: rgb(55, 190, 145);
 }
 .meLogoHolder .fa-regular{
       font-size: 1.3rem;
-      margin-bottom: 0.3rem;
 }
 .meLogoHolder p{
       font-size: 0.8rem;
-      margin-bottom: 0.1rem;
 }
