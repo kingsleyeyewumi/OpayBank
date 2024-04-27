@@ -1335,10 +1335,9 @@
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: auto;
       grid-template-areas: "home reward finance cards me";
-      /* padding: 0.5rem; */
       /* border: 2px solid black; */
       position: sticky;
-      bottom: 1px;
+      bottom: 3px;
       /* padding-top: 0.5rem; */
       /* padding-bottom: 0.5rem; */
 }
