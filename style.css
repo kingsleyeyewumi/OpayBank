@@ -1336,10 +1336,10 @@
       grid-template-rows: auto;
       grid-template-areas: "home reward finance cards me";
       /* border: 2px solid black; */
-      position: sticky;
+      position: fixed;
+      width: 100%;
       bottom: 1px;
-      /* padding-top: 0.5rem; */
-      /* padding-bottom: 0.5rem; */
+      padding-top: 0.5rem;
 }
 /* contents of .footer */
 .home{
@@ -1349,6 +1349,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0.3rem;
 }
 /* content of .home */
 .home a{
@@ -1382,6 +1383,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0.3rem;
 }
 /* content of .reward */
 .reward a{
@@ -1414,6 +1416,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0.3rem;
 }
 /* content of .finance */
 .finance a{
@@ -1446,6 +1449,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0.3rem;
 }
 /* content of .cards */
 .cards a{
@@ -1478,6 +1482,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0.3rem;
 }
 /* content of .me */
 .me a{
